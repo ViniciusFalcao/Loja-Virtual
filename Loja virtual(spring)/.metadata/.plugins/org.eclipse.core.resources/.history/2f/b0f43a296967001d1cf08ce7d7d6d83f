@@ -1,0 +1,10 @@
+package br.com.vinicius.lojavirtual.services;
+
+import org.springframework.stereotype.Service;
+
+@Service
+@Re
+public class EstadoService {
+	
+
+}

@@ -1,0 +1,31 @@
+package br.com.vinicius.lojavirtual.models;
+
+import java.io.Serializable;
+import java.util.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Table;
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@Entity
+@NoArgsConstructor
+@Table(name = "estado")
+public class Estate implements Serializable {/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	@Id
+	@GeneratedValue
+	private Long id;
+	private String nome;
+	private String sigla;
+	private Date dataCriacao;
+	private Date dataatualizacao;
+	
+	
+
+}

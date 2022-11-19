@@ -1,0 +1,9 @@
+package br.com.vinicius.lojavirtual.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import br.com.vinicius.lojavirtual.models.Estate;
+
+public interface EstadoRepository extends JpaRepository<Estate, Long> {
+
+}

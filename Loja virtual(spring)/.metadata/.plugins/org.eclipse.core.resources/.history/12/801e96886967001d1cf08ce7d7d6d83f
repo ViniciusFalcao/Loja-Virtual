@@ -1,0 +1,13 @@
+package br.com.vinicius.lojavirtual.services;
+
+import org.springframework.stereotype.Service;
+
+import lombok.RequiredArgsConstructor;
+import /lojavirtual/src/main/java/br/com/vinicius/lojavirtual/repository/EstadoRepository.java
+
+@Service
+@RequiredArgsConstructor
+public class EstadoService {
+	private EstadoRe
+
+}

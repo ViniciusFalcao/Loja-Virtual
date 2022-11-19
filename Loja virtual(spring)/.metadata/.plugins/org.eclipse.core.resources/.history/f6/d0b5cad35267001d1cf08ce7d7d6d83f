@@ -1,0 +1,14 @@
+package br.com.vinicius.lojavirtual.models;
+
+import javax.persistence.Entity;
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
+
+@Data
+@Entity
+@NoArgsConstructor
+public class Estate {
+
+}
