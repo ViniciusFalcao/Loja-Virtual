@@ -1,0 +1,39 @@
+package br.com.vinicius.lojavirtual.services;
+
+import java.util.Date;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import br.com.vinicius.lojavirtual.models.Estado;
+import br.com.vinicius.lojavirtual.repository.EstadoRepository;
+import lombok.RequiredArgsConstructor;
+
+
+@Service
+@RequiredArgsConstructor
+public class EstadoService {
+	private final EstadoRepository estadoR;
+	
+	
+	public List<Estado> listaTodos(){
+		return estadoR.findAll();
+	}
+	
+	public Estado inserir(Estado estado) {
+		estado.setDataCriacao(new Date());
+		return estadoR.saveAndFlush(estado);
+		
+	}
+	
+	public Estado atualizar(Estado estado) {
+		estado.setDataatualizacao(new Date());
+		return estadoR.saveAndFlush(estado);
+	}
+	public void deletar(Long id) {
+		 Estado estado= estadoR.findById(id).get();
+		 
+		 estadoR.delete(estado);
+	}
+
+}
